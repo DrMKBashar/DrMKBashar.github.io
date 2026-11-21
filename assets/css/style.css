@@ -205,3 +205,12 @@ h1,h2,h3{font-family:var(--font);color:var(--navy);margin:0;line-height:1.25;fon
   .hero h1{font-size:1.6rem}
   .photo{max-width:200px}
 }
+
+/* ---- blue sections (same navy as the Principal Investigator block) ---- */
+.sec:not(.alt){background:var(--navy)}
+.sec:not(.alt) h2{color:#fff}
+.sec:not(.alt) .sec-note{color:rgba(255,255,255,.85)}
+.sec:not(.alt) .gallery figcaption{color:rgba(255,255,255,.88)}
+.sec:not(.alt) .gallery a{box-shadow:0 4px 14px rgba(0,0,0,.35)}
+.sec:not(.alt) .acc[open] summary,.sec:not(.alt) .acc[open] summary:hover{background:#e3e9f3;color:var(--navy)}
+.sec:not(.alt) .acc[open] summary::after{border-color:var(--navy)}
