@@ -96,7 +96,7 @@ h1,h2,h3{font-family:var(--font);color:var(--navy);margin:0;line-height:1.25;fon
 .pubs li::marker{color:var(--navy);font-weight:600}
 
 /* tables */
-.grid-2{display:grid;grid-template-columns:1fr 1fr;gap:44px}
+.grid-2{display:grid;grid-template-columns:1fr;gap:0}
 .tbl{width:100%;border-collapse:collapse;font-size:.95rem;background:#fff}
 .tbl th,.tbl td{text-align:left;vertical-align:top;padding:12px 16px;border-top:1px solid var(--line)}
 .tbl tr:first-child th,.tbl tr:first-child td{border-top:0}
