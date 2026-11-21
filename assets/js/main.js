@@ -30,3 +30,11 @@
 
   document.getElementById('yr').textContent = new Date().getFullYear();
 })();
+
+// header turns solid once the page is scrolled past the top
+(function () {
+  var h = document.querySelector('.site-header');
+  function onScroll() { h.classList.toggle('solid', window.scrollY > 40); }
+  window.addEventListener('scroll', onScroll, { passive: true });
+  onScroll();
+})();
