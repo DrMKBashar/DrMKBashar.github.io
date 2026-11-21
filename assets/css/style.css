@@ -1,6 +1,6 @@
 :root{
   --bg:#dfe0db; --white:#fff; --navy:#253551; --navy-deep:#1b245f; --ink:#111418; --muted:#4b5360;
-  --line:#c5c8c0; --hero-shade:rgba(18,26,44,.55);
+  --line:#c5c8c0; --hero-shade:rgba(18,26,44,.58);
   --font:'Hanken Grotesk',Arial,Helvetica,sans-serif;
 }
 *{box-sizing:border-box}
@@ -33,7 +33,7 @@ h1,h2,h3{font-family:var(--font);color:var(--navy);margin:0;line-height:1.25;fon
 
 /* hero */
 .hero{min-height:76vh;display:flex;align-items:flex-end;color:#fff;
-  background:linear-gradient(var(--hero-shade),var(--hero-shade)),url("../img/gallery/barc-research-presentation.jpg") center 30%/cover no-repeat;
+  background:linear-gradient(var(--hero-shade),var(--hero-shade)),url("../img/hero-field.jpg") center 55%/cover no-repeat;
   padding:130px 0 130px}
 .hero-in{max-width:none}
 .hero-kicker{margin:0 0 14px;font-size:.88rem;font-weight:500;letter-spacing:.08em;text-transform:uppercase;opacity:.9}
@@ -214,3 +214,4 @@ h1,h2,h3{font-family:var(--font);color:var(--navy);margin:0;line-height:1.25;fon
 .sec:not(.alt) .gallery a{box-shadow:0 4px 14px rgba(0,0,0,.35)}
 .sec:not(.alt) .acc[open] summary,.sec:not(.alt) .acc[open] summary:hover{background:#e3e9f3;color:var(--navy)}
 .sec:not(.alt) .acc[open] summary::after{border-color:var(--navy)}
+.site-footer p a{text-decoration:underline}
