@@ -365,3 +365,10 @@ a:hover{color:#0a2a6b}
   .hero::after{background:linear-gradient(rgba(255,255,255,.93) 0%,rgba(255,255,255,.9) 55%,rgba(255,255,255,.8) 100%)}
   .hero::before{display:none}
 }
+
+/* ---- desktop: portrait on the left, text on the right (background photo and its fade unchanged) ---- */
+@media (min-width:821px){
+  .hero-grid{grid-template-columns:.85fr 1.15fr}
+  .hero-portrait{order:-1;justify-self:start}
+  .hero-text{padding:30px 36px;margin-bottom:56px;background:rgba(255,255,255,.84);-webkit-backdrop-filter:blur(8px);backdrop-filter:blur(8px);border-radius:18px}
+}
