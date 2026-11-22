@@ -215,3 +215,59 @@ h1,h2,h3{font-family:var(--font);color:var(--navy);margin:0;line-height:1.25;fon
 .sec:not(.alt) .acc[open] summary,.sec:not(.alt) .acc[open] summary:hover{background:#e3e9f3;color:var(--navy)}
 .sec:not(.alt) .acc[open] summary::after{border-color:var(--navy)}
 .site-footer p a{text-decoration:underline}
+
+/* ---- OpenAI-style: white base, black pills, gradient tiles ---- */
+:root{
+  --navy:#0d1633; --navy-deep:#0b2a6e; --line:#e3e6ec;
+  --grad:linear-gradient(135deg,#0a2a6b 0%,#1f63d8 48%,#62c9f5 100%);
+  --grad-dark:linear-gradient(160deg,#050b22 0%,#0b2260 100%);
+  --grad-sec:linear-gradient(135deg,#0a2a6b 0%,#1c5fd0 70%,#2e86e6 100%);
+}
+body{background:#fff}
+a{color:#1f63d8}
+a:hover{color:#0a2a6b}
+.about{background:#fff}
+.sec{background:#fff}
+.sec.alt{background:#f5f6f8;border-color:transparent}
+.sec:not(.alt){background:var(--grad-sec)}
+.sec h2{text-align:center;font-size:clamp(1.8rem,3.2vw,2.5rem);color:var(--navy);margin-bottom:34px}
+.sec-note{text-align:center;margin:-18px 0 26px}
+.sec .sub{border:0;padding:0}
+
+.site-header.solid{background:#0b1226}
+.nav{background:transparent}
+.site-footer{background:#080d1c}
+.pill-white:hover{background:#000;color:#fff}
+.pill-navy{background:#000}
+.pill-navy:hover{background:#1f63d8}
+
+.hero{background:linear-gradient(180deg,rgba(6,14,40,.62) 0%,rgba(12,52,140,.42) 100%),url("../img/hero-field.jpg") center 55%/cover no-repeat}
+.photo figcaption{background:#0b1226}
+.navy-card{background:var(--grad-dark);box-shadow:0 24px 50px -24px rgba(5,11,34,.7)}
+
+.featured{background:var(--grad);border-radius:22px;padding:38px 42px;box-shadow:0 22px 44px -22px rgba(31,99,216,.7)}
+.featured h3{font-size:1.45rem}
+.proj li{background:#fff;border:1px solid var(--line);border-radius:18px;box-shadow:none}
+.proj li::before{color:#1f63d8}
+
+.acc{border:1px solid var(--line);border-radius:18px;box-shadow:none}
+.acc summary:hover{background:#f3f6fc}
+.acc[open] summary,.acc[open] summary:hover{background:var(--grad);color:#fff}
+.acc[open] summary::after{border-color:#fff}
+.sec:not(.alt) .acc[open] summary,.sec:not(.alt) .acc[open] summary:hover{background:#e3e9f3;color:var(--navy)}
+.sec:not(.alt) .acc[open] summary::after{border-color:var(--navy)}
+.tbl{border:1px solid var(--line);border-radius:14px}
+.tbl th{color:#1f63d8}
+.gallery a{box-shadow:0 10px 26px -12px rgba(11,34,96,.55)}
+.site-footer p a{color:#fff}
+
+@media (max-width:820px){
+  .hero{background-position:62% 30%}
+  .featured{padding:24px 22px}
+  .featured h3{font-size:1.15rem}
+  .sec h2{margin-bottom:26px}
+  .nav{background:#0b1226}
+}
+.sec-note{margin:6px 0 26px}
+#research .sec-note{margin:-18px 0 26px}
+.sec-note a{color:#1f63d8}
